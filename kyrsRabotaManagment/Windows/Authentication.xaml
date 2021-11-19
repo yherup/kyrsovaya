@@ -1,0 +1,20 @@
+﻿<Window x:Class="kyrsRabotaManagment.Authentication"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kyrsRabotaManagment"
+        mc:Ignorable="d"
+        Title="Authentication" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"></RowDefinition>
+            <RowDefinition Height="372*"  ></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBlock TextWrapping="Wrap" Text="{Binding ElementName=FrameAuthentication, Path=Content.Title}" FontSize="14" Margin="0,0,10,0"/>
+        </StackPanel>
+        
+        <Frame Grid.Row="1" x:Name="FrameAuthentication" Content="" Height="auto" Width="auto"  NavigationUIVisibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
